@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 function EventsHomeScreen(){
