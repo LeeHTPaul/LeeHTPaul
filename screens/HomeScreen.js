@@ -3,14 +3,6 @@ import { Text, SafeAreaView, ScrollView, StyleSheet } from 'react-native';
 import { List, Card, Title, Paragraph } from 'react-native-paper';
 import { createStackNavigator } from '@react-navigation/stack'
 
-/*export default function HomeScreen() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Home!</Text>
-      </View>
-    );
-  }*/
-
 const Stack = createStackNavigator()
 
 export default function HomeStack() {
@@ -27,29 +19,28 @@ function HomeScreen() {
     <SafeAreaView>
       <ScrollView>
         <Text style={styles.title}>
-          Basket Throwing Tournament
+          Details extensions
         </Text>
 
         <Card style={styles.card}>
           <Card.Content>
             <Title>Welcome</Title>
-            <Paragraph>Thank you for downloadiing this app. You will find all the details of the events here. Stay tuned!</Paragraph>
+            <Paragraph>Thank you for downloading this app. You will find the important details of the course have been enhanced here. Hope you find it interesting.</Paragraph>
           </Card.Content>
-          <Card.Cover style={{marginTop: 10, height: 400}} source={{ uri: 'https://www.ikea.com/sg/en/images/products/branaes-basket-rattan__0710999_pe727908_s5.jpg' }} />
-        </Card>
+          </Card>
         
         <List.Section title="Frequently Asked Questions">
           <List.Accordion
             title="What is this for?">
-            <List.Item title="Have fun throwing balls!" />
+            <List.Item title="Have fun learning JS!" />
           </List.Accordion>
           <List.Accordion
             title="When will this be?">
-            <List.Item title="Very soon, stay tuned" />
+            <List.Item title="Right now! Click!!" />
           </List.Accordion>
           <List.Accordion
             title="Where will this be?">
-            <List.Item title="Hougang Court besides The RiverView condo" />
+            <List.Item title="In your Phone/Notebook!!" />
           </List.Accordion>
         </List.Section>
       </ScrollView>
